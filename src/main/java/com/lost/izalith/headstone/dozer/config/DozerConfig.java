@@ -16,12 +16,6 @@ public class DozerConfig {
 
     private static final String PACKAGE_TO_SCAN = "com.lost.izalith.headstone.dozer.mapping";
 
-    /**
-     * Dozer bean mapper configuration.
-     *
-     * @return return configured spring bean.
-     * @throws ReflectiveOperationException an exception.
-     */
     @Bean
     public DozerBeanMapper mapper() throws ReflectiveOperationException {
         final DozerBeanMapper mapper = new DozerBeanMapper();
