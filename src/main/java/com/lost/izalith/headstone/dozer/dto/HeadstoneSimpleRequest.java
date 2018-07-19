@@ -10,4 +10,6 @@ public class HeadstoneSimpleRequest {
     private String key;
 
     private String value;
+
+    private String someEnum;
 }

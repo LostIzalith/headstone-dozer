@@ -1,8 +1,10 @@
 package com.lost.izalith.headstone.dozer.mapping;
 
+import com.lost.izalith.headstone.dozer.converter.SomeEnumConverter;
 import com.lost.izalith.headstone.dozer.domain.HeadstoneSimpleEntity;
 import com.lost.izalith.headstone.dozer.dto.HeadstoneSimpleRequest;
 import org.dozer.loader.api.BeanMappingBuilder;
+import org.dozer.loader.api.FieldsMappingOptions;
 import org.dozer.loader.api.TypeMappingOptions;
 
 public class SimpleRequest2SimpleEntity extends BeanMappingBuilder {
@@ -12,6 +14,7 @@ public class SimpleRequest2SimpleEntity extends BeanMappingBuilder {
         mapping(HeadstoneSimpleRequest.class, HeadstoneSimpleEntity.class, TypeMappingOptions.oneWay())
                 .fields("name", "name")
                 .fields("key", "key")
-                .fields("value", "value");
+                .fields("value", "value")
+                .fields("", "", FieldsMappingOptions.customConverter(SomeEnumConverter.class));
     }
 }

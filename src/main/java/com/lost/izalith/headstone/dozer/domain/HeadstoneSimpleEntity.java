@@ -10,4 +10,6 @@ public class HeadstoneSimpleEntity {
     private String key;
 
     private String value;
+
+    private SomeEnum someEnum;
 }
