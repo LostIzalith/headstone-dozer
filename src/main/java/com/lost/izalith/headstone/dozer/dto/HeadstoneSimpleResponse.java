@@ -14,4 +14,6 @@ public class HeadstoneSimpleResponse {
     private String value;
 
     private String someAction;
+
+    private String myAwesomeString;
 }

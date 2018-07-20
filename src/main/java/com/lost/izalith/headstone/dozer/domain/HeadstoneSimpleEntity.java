@@ -12,4 +12,6 @@ public class HeadstoneSimpleEntity {
     private String value;
 
     private SomeEnum someEnum;
+
+    private String myAwesomeString;
 }

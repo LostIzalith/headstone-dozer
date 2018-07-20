@@ -12,4 +12,6 @@ public class HeadstoneSimpleRequest {
     private String value;
 
     private String someEnum;
+
+    private String dataString;
 }

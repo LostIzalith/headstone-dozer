@@ -13,6 +13,7 @@ public class SimpleEntity2SimpleResponse extends BeanMappingBuilder {
                 .fields("name", "awesomeName")
                 .fields("key", "key")
                 .fields("value", "value")
-                .fields("someEnum", "someAction");
+                .fields("someEnum", "someAction")
+                .fields("myAwesomeString", "myAwesomeString");
     }
 }

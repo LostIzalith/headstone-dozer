@@ -30,8 +30,7 @@ public class DozerConfig {
         final List<BeanMappingBuilder> registeredMapping = getRegisteredMappings();
         registeredMapping.forEach(mapper::addMapping);
 
-        final HashMap<String, CustomConverter> converters = new HashMap<>(getCustomConvertersWithId());
-        mapper.setCustomConvertersWithId(converters);
+        mapper.setCustomConvertersWithId(getCustomConvertersWithId());
 
         return mapper;
     }
