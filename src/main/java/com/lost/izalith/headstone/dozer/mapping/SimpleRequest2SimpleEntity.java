@@ -15,6 +15,6 @@ public class SimpleRequest2SimpleEntity extends BeanMappingBuilder {
                 .fields("name", "name")
                 .fields("key", "key")
                 .fields("value", "value")
-                .fields("", "", FieldsMappingOptions.customConverter(SomeEnumConverter.class));
+                .fields("someEnum", "someEnum", FieldsMappingOptions.customConverter(SomeEnumConverter.class));
     }
 }

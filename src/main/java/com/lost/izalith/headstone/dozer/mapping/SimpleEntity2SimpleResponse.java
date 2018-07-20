@@ -12,6 +12,7 @@ public class SimpleEntity2SimpleResponse extends BeanMappingBuilder {
         mapping(HeadstoneSimpleEntity.class, HeadstoneSimpleResponse.class, TypeMappingOptions.oneWay())
                 .fields("name", "awesomeName")
                 .fields("key", "key")
-                .fields("value", "value");
+                .fields("value", "value")
+                .fields("someEnum", "someAction");
     }
 }

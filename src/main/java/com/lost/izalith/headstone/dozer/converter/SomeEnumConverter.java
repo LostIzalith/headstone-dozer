@@ -2,9 +2,11 @@ package com.lost.izalith.headstone.dozer.converter;
 
 import com.lost.izalith.headstone.dozer.domain.SomeEnum;
 import org.dozer.CustomConverter;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+@Component
 public class SomeEnumConverter implements CustomConverter {
 
     @Override
